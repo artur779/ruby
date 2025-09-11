@@ -1,5 +1,5 @@
 def play_game
-  number = rand(1...100)
+  number = rand(1..100)
   attempts = 0
 
   puts "Я загадав число від 1 до 100. Спробуй вгадати!"
