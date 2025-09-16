@@ -5,7 +5,7 @@ def word_stats(text)
   unique_words = words.map(&:downcase).uniq
   unique_count = unique_words.size
 
-  puts "#{total_words} word(s), найдовше: #{longest_word}, унікальних: #{unique_count}"
+  puts "#{total_words} слово(а), найдовше: #{longest_word}, унікальних: #{unique_count}"
 end
 
 print "Введіть текст: "
