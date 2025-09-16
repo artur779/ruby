@@ -9,6 +9,6 @@ def word_stats(text)
 end
 
 print "Введіть текст: "
-text = gets.chomp
+text = gets
 word_stats(text)
 
