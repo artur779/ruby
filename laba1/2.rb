@@ -3,7 +3,6 @@ def play_game
   attempts = 0
 
   puts "Я загадав ціле число від 1 до 100. Спробуй вгадати!"
-
   loop do
     print "Твоє припущення: "
     guess = gets.to_i
@@ -14,7 +13,7 @@ def play_game
     elsif guess > number
       puts "Менше"
     else
-      puts "Вгадано! Кількість спроб: #{attempts}"
+      puts "Вгадав! Кількість спроб: #{attempts}"
       break
     end
   end
