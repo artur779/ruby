@@ -6,7 +6,7 @@ def play_game
 
   loop do
     print "Твоє припущення: "
-    guess = gets
+    guess = gets.to_i
     attempts += 1
 
     if guess < number
