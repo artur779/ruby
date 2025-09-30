@@ -3,6 +3,10 @@ def cut_cake(cake)
   cols = cake.first.size
   raisins = []
 
+  unless cake.all? { |row| row.size == cols }
+    raise "Кривий пиріг! Усі рядки мають бути однакової довжини."
+  end
+
   cake.each_with_index do |row, i|
     row.chars.each_with_index do |cell, j|
       raisins << [i, j] if cell == 'o'
