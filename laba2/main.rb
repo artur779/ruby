@@ -62,12 +62,11 @@ def cut_cake(cake)
   result
 end
 
-
 cake = [
   ".......",
   "..o....",
-  "...o....",
-  "........"
+  "...o...",
+  "......."
 ]
 
 res = cut_cake(cake)
