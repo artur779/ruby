@@ -3,7 +3,6 @@ def cut_cake(cake)
   cols = cake.first.size
   raisins = []
 
-  # Збираємо координати родзинок
   cake.each_with_index do |row, i|
     row.chars.each_with_index do |cell, j|
       raisins << [i, j] if cell == 'o'
