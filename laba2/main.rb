@@ -4,7 +4,7 @@ def cut_cake(cake)
   raisins = []
 
   unless cake.all? { |row| row.size == cols }
-    raise "Кривий пиріг! Усі рядки мають бути однакової довжини."
+    raise "Усі рядки мають бути однакової довжини."
   end
 
   cake.each_with_index do |row, i|
