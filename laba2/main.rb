@@ -2,9 +2,7 @@ def cut_cake(cake)
   rows = cake.size
   cols = cake.first.size
 
-  unless cake.all? { |row| row.size == cols }
-    raise "Усі рядки мають бути однакової довжини."
-  end
+    raise "Усі рядки мають бути однакової довжини."unless cake.all? { |row| row.size == cols }
 
   raisins = []
   cake.each_with_index do |row, i|
