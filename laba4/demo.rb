@@ -1,4 +1,3 @@
-# Допустимі базові одиниці: :g, :ml, :pcs
 class Ingredient
   attr_reader :name, :base_unit, :calories_per_unit
 
@@ -82,7 +81,6 @@ class Pantry
     @store = Hash.new(0.0)
   end
 
-  # add(ingredient, qty, unit)
   def add(ingredient, qty, unit)
     raise ArgumentError.new("ingredient має бути Ingredient") unless ingredient.is_a?(Ingredient)
     base_qty = UnitConverter.to_base(qty, unit, ingredient.base_unit)
@@ -96,7 +94,6 @@ end
 
 class Planner
   def self.plan(recipes, pantry, price_list, ingredients_index)
-    # aggregate needs across recipes
     total_need = Hash.new(0.0)
     recipes.each do |r|
       need = r.need
@@ -137,9 +134,6 @@ class Planner
   end
 end
 
-
-
-
 ingredients = {}
 
 ingredients["яйце"] = Ingredient.new("яйце", :pcs, 72.0)           # 72 калорії / шт
@@ -165,7 +159,6 @@ price_list = {
   "соус" => 0.025,
   "сир" => 0.08
 }
-
 
 omlet = Recipe.new("Омлет", ["Збити яйця, додати молоко і борошно, смажити"], [
   { ingredient: ingredients["яйце"], qty: 3, unit: :pcs },
