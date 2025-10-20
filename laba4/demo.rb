@@ -136,12 +136,12 @@ end
 
 ingredients = {}
 
-ingredients["яйце"] = Ingredient.new("яйце", :pcs, 72.0)           # 72 калорії / шт
-ingredients["молоко"] = Ingredient.new("молоко", :ml, 0.06)       # 0.06 ккал / мл
-ingredients["борошно"] = Ingredient.new("борошно", :g, 3.64)     # 3.64 ккал / г
-ingredients["паста"] = Ingredient.new("паста", :g, 3.5)           # 3.5 ккал / г
-ingredients["соус"] = Ingredient.new("соус", :ml, 0.2)           # 0.2 ккал / мл
-ingredients["сир"] = Ingredient.new("сир", :g, 4.0)              # 4.0 ккал / г
+ingredients["яйце"] = Ingredient.new("яйце", :pcs, 72.0)
+ingredients["молоко"] = Ingredient.new("молоко", :ml, 0.06)
+ingredients["борошно"] = Ingredient.new("борошно", :g, 3.64)
+ingredients["паста"] = Ingredient.new("паста", :g, 3.5)
+ingredients["соус"] = Ingredient.new("соус", :ml, 0.2)
+ingredients["сир"] = Ingredient.new("сир", :g, 4.0)
 
 
 pantry = Pantry.new
