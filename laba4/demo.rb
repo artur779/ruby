@@ -145,8 +145,8 @@ ingredients["сир"] = Ingredient.new("сир", :g, 4.0)
 
 
 pantry = Pantry.new
-pantry.add(ingredients["борошно"], 1, :kg)   # 1 kg -> 1000 g
-pantry.add(ingredients["молоко"], 0.5, :l)   # 0.5 l -> 500 ml
+pantry.add(ingredients["борошно"], 1, :kg)
+pantry.add(ingredients["молоко"], 0.5, :l)
 pantry.add(ingredients["яйце"], 6, :pcs)
 pantry.add(ingredients["паста"], 300, :g)
 pantry.add(ingredients["сир"], 150, :g)
