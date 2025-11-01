@@ -54,7 +54,7 @@ def write_json_report(scanned_files, groups, path = "duplicates.json")
   File.write(path, JSON.pretty_generate(report))
 end
 
-# ==== запуск ====
+
 files = collect_files("C:/Users/Lenovo/RubyMineProjects", ignore: ["*/.git/*", "*/tmp/*"])
 puts "Зібрано #{files.size} файлів"
 
