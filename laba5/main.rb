@@ -24,7 +24,7 @@ cur = curry3(sum3)
 puts cur.call(1).call(2).call(3)     # => 6
 puts cur.call(1, 2).call(3)          # => 6
 puts cur.call(1).call(2, 3)          # => 6
-p cur.call()                         # => повертає callable (Proc)
+puts cur.call()                         # => повертає callable (Proc)
 puts cur.call(1, 2, 3)               # => 6
 puts cur.call(1, 2, 3, 4)          # => ArgumentError
 
