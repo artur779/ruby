@@ -1,5 +1,5 @@
 class RetryExecutor
-  def initialize(retries: 3, delay: 1) #це параметри за замовчуванням,якщо далі нею вказати які вирористовувати
+  def initialize(retries: 3, delay: 1) #це параметри за замовчуванням,якщо далі не вказати які використовувати
     @retries = retries
     @delay = delay
   end
@@ -26,3 +26,4 @@ executor.execute do
   puts "Запускаю дію"
   raise "Помилка"
 end
+
